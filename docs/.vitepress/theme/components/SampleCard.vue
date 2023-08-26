@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import { ref } from 'vue'
-  import BaseButton from '@/components/BaseButton.vue'
 
   const props = defineProps({
     name: {
@@ -28,18 +27,14 @@
         </p>
       </div>
       <div class="flex justify-around px-6 py-4">
-        <BaseButton class="rounded-full" variant="outline" size="xs"
-          >#photography</BaseButton
-        >
-        <BaseButton class="rounded-full" variant="outline" size="xs"
-          >#travel</BaseButton
-        >
-        <BaseButton class="rounded-full" variant="outline" size="xs"
-          >#winter</BaseButton
-        >
+        <button class="rounded-full bg-blue-600 text-white p-4">
+          #photography
+        </button>
+        <button class="rounded-full bg-blue-600 text-white p-4">#travel</button>
+        <button class="rounded-full bg-blue-600 text-white p-4">#winter</button>
       </div>
     </div>
-    <BaseButton label="Quick Start" to="quick-start" variant="solid" />
+    <button class="rounded-full bg-blue-600 text-white p-4">Quick Start</button>
   </div>
 </template>
 <style scoped></style>
