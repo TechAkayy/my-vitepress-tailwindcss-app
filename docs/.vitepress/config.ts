@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  /* Uncomment this line */
-  // srcDir: 'theme/pages',
+  /* Uncomment srcDir line, both paths relative to project root, and relative to .vitepress folder, doesn't work */
+  // srcDir: 'docs/content',
+  // srcDir: 'content',
   title: 'My Awesome Project',
   description: 'A VitePress Site',
   themeConfig: {
