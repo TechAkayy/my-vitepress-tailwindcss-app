@@ -33,10 +33,11 @@ export default defineConfig({
     // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
     AutoImportAPIs({
       include: [
-        /.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-        /.vue$/,
-        /.vue?vue/, // .vue
-        /.md$/, // .md
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+        /\.md$/, // .md
+        /\.mdx$/, // .mdx
       ],
       imports: [
         'vue',
@@ -68,7 +69,7 @@ export default defineConfig({
       extensions: ['vue', 'md'],
 
       // allow auto import and register components used in markdown
-      include: [/\.vue$/, /\.vue\?vue/, /\.mdx?/],
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/],
 
       // resolvers: [], // Auto-import using resolvers
       dts: 'components.d.ts',
